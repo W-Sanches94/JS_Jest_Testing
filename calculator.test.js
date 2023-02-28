@@ -99,6 +99,17 @@ describe('modulus', () => {
 });
 
 describe('even', () => {
+  test('number is even', () => {
+    expected = true;
+    actual = even(8);
+    expect(actual).toBe(expected);
+  });
+
+  test('negative number is even', () => { 
+    expected = true;
+    actual = even(826482);
+    expect(actual).toBe(expected); 
+  });
 
 });
 
