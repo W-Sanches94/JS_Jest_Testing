@@ -111,6 +111,18 @@ describe('even', () => {
     expect(actual).toBe(expected); 
   });
 
+  test('number is not even', () => {
+    expected = false;
+    actual = even(7);
+    expect(actual).toBe(expected);
+  });
+
+  test('negative number is not even', () => { 
+    expected = false;
+    actual = even(-137973);
+    expect(actual).toBe(expected); 
+  });
+
 });
 
 describe('odd', () => {
@@ -123,6 +135,18 @@ describe('odd', () => {
   test('negative number is odd', () => { 
     expected = true;
     actual = odd(-937519);
+    expect(actual).toBe(expected); 
+  });
+
+  test('number is not odd', () => {
+    expected = false;
+    actual = odd(2);
+    expect(actual).toBe(expected);
+  });
+
+  test('negative number is not odd', () => { 
+    expected = false;
+    actual = odd(-86428);
     expect(actual).toBe(expected); 
   });
 

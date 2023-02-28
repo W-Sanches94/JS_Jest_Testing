@@ -19,12 +19,12 @@ const modulus = function (a,b){
 };
 
 const even = function(a){
-    if (a % 2 == 0){return true}
+    if (a % 2 === 0){return true}
     else {return false};
 };
 
 const odd = function(a){
-    if(a % 1 == 0){return true}
+    if(a % 2 !== 0){return true}
     else {return false};
 };
 
