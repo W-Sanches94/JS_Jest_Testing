@@ -24,7 +24,8 @@ const even = function(a){
 };
 
 const odd = function(a){
-    return a % 1 == 0;
+    if(a % 1 == 0){return true}
+    else {return false};
 };
 
 module.exports = { 

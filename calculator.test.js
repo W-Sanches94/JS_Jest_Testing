@@ -85,13 +85,13 @@ describe('divide', () => {
 });
 
 describe('modulus', () => {
-  test('can modulus two small positive numbers', () => {
+  test('can modulo two small positive numbers', () => {
     expected = 2;
     actual = modulus(2, 3);
     expect(actual).toBe(expected);
   });
 
-  test('can modulus two large positive numbers', () => { 
+  test('can modulo two large positive numbers', () => { 
     expected = 20000;
     actual = modulus(20000, 22000);
     expect(actual).toBe(expected); 
@@ -107,12 +107,23 @@ describe('even', () => {
 
   test('negative number is even', () => { 
     expected = true;
-    actual = even(826482);
+    actual = even(-826482);
     expect(actual).toBe(expected); 
   });
 
 });
 
 describe('odd', () => {
+  test('number is odd', () => {
+    expected = true;
+    actual = odd(7);
+    expect(actual).toBe(expected);
+  });
+
+  test('negative number is odd', () => { 
+    expected = true;
+    actual = odd(-937519);
+    expect(actual).toBe(expected); 
+  });
 
 });
